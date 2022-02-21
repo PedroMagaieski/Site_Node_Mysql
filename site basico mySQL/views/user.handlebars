@@ -1,0 +1,14 @@
+<!--HTML da pagina de usuario-->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+      <h1>Lista de usuarios: </h1>
+      {{#each user}}
+          <h3 class="w3-padding-16">nome: {{dataValues.nome}}</h3>
+          <h4 class="w3-padding-16">email: {{dataValues.email}}</h4>
+          <h4 class="w3-padding-6">id: {{dataValues.id}}</h4>
+          <p class="w3-padding-6">Adicionado Em: {{dataValues.createdAt}}</p>
+          <a href="/deletar/{{dataValues.id}}"><button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Deletar usuario</button></a>
+          <hr>
+      {{/each}}
+  </div>
+</div>

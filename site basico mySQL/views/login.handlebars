@@ -1,0 +1,30 @@
+<!--HTML da tela de login-->
+<!doctype html>
+<html>
+  <!--<h1>Login</h1>-->
+  <header class="w3-container w3-red w3-center" style="padding:128px 16px">
+        <form Action="/login" method="POST">
+            <p>nome: </p>
+            <input type="text" name="nome" placeholder="nome">
+            <p>senha: </p>
+            <input type="password" name="senha" placeholder="senha">
+            <p><p>
+            <button type="submit" class="w3-button w3-black w3-padding-large w3-large w3-margin-top" value="Login">Login</button>
+        </form>
+  </header>
+  <body>
+    <!--aqui mecher na aparencia-->
+    <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+      <div class="w3-content">
+        <!--<% : if(message) { %>
+          <p>
+            <label style="color:Red"><%= message %></label>
+          </p>
+        <%}%>-->
+          <p>
+            <a href="/users/forgot">Esqueceu sua senha?</a> | <a href="/users/signup">Não possui cadastro?</a>
+          </h1>
+        </p>
+    </div>
+  </body>
+</html>
